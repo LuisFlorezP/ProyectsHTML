@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Index</title>
+    <meta name="description" content="La programacón en HTML, la estructura base de toda página web, analicemos más a fondo..."/>
+    <meta name="keywords" content="HTML, Extensiones, aplicaciones, URL, Plataformas"/>
+</head>
+
+<body>
+    <center>
+        <header>
+            <h2>CONCEPTOS DE HTML</h2>
+        </header>
+    </center>
+    <nav>
+        <ul>
+            <li><a href="puntoA.html">Editores de HTML</a></li>
+            <li><a href="puntoB.html">¿Qué es HTML?</a></li>
+            <li><a href="puntoC.html">Clasificación web</a></li>
+            <li><a href="puntoD.html">Dominio y hosting</a></li>
+            <li><a href="puntoE.html">Enlaces URL</a></li>
+            <li><a href="puntoF.html">Plataformas</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <center>
+                <h3>Explicación líneas de código</h3>
+            </center>
+            <br>
+            <h4>Línea de código: meta name=description content=Ejemplo de HTML5</h4>
+            En la descripción o meta description podemos describir brevemente el contenido de la página web. Esta información se muestra 
+            como snippet (una síntesis en dos líneas del tema de una página que aparece bajo la URL) en los buscadores de uso más 
+            generalizado como Google o Bing, por lo que se recomienda cuidar su redacción. Por su papel central en tanto que influye 
+            de manera decisiva en la elección del usuario del mejor resultado acorde con su búsqueda, este meta tag es considerado 
+            uno de los más importantes en cuanto a la optimización para los buscadores. La descripción no debe sobrepasar los 160 
+            caracteres de longitud, ya que se corre el riesgo de que esta aparezca incompleta en la lista de resultados. La 
+            metadescripción se dirige principalmente al usuario, por lo que debería contener un resumen preciso del contenido que 
+            le espera cuando haga clic en la página. Según Google, cada subpágina de una página web debería contar con una descripción 
+            propia que facilite información útil y precisa sobre su contenido. Esto aporta al usuario un valor añadido y ayuda a los 
+            administradores a aumentar su ratio de clics.
+            <br><br>
+            <h4>Línea de código: meta name=keywords content=HTML5, CSS3, JavaScript</h4>
+            Con esta etiqueta meta los administradores tienen la posibilidad de definir palabras clave para el buscador. Las keywords 
+            son aquellos criterios a los que responde un buscador para ofrecerle al usuario páginas HTML como respuesta, donde tales 
+            palabras clave son parte de los meta tags. Anteriormente, esta etiqueta era considerada como el factor SEO más importante, 
+            ya que los buscadores primitivos recurrían a este atributo como característica central para el posicionamiento en las 
+            listas de resultados. Pero hoy es ignorado por Google y su importancia ha sido minimizada por Bing y otros buscadores 
+            populares debido a la facilidad con que puede ser manipulado en el cálculo del factor de ranking. Es por ello que ha 
+            perdido todo su valor en el campo de la optimización para los buscadores, aunque esto no significa que un mal uso de 
+            este meta tag no pueda llevar a la devaluación en el posicionamiento.
+            <br><br>
+            La elección de las palabras clave requiere de cierta sutileza: hay que evitar su uso abusivo, fenómeno  conocido como 
+            keyword stuffing, así como aquellas sin relación con el contenido de las páginas en una web. A consecuencia de que 
+            los archivos locales de búsqueda y los metabuscadores acuden a la información en los meta tags de las palabras clave, 
+            se recomienda introducir términos relevantes.
+            <br><br>
+            <center>
+                <h3>Tipos de meta</h3>
+            </center>
+            <h4>Autor (author) y copyright:</h4>
+            Estos dos meta tags, de uso opcional desde el punto legal, permiten hacer referencia al diseñador de una página 
+            web y al propietario de los derechos del código fuente de una página HTML. En algunos sistemas de gestión de 
+            contenido (CMS), las etiquetas de autor se generan automáticamente y en ellas se nombra a la persona que ha trabajado 
+            la página en último lugar. De esta forma, los administradores pueden extraer del directorio quién gestiona cada página.
+            <br><br>
+            <center>
+                "<"meta name="author" content="Nombre del autor" /">"
+                <br>
+                "<"meta name="copyright" content="Propietario del copyright" /">"
+            </center>
+            <br><br>
+            <center>
+                <h4>Etiqueta “equiv” de HTTP</h4>
+            </center>
+            Los meta tags con el atributo “http-equiv” pueden contener información equivalente a las indicaciones en el encabezado 
+            HTTP, la cual puede ser leída, por ejemplo, si el servidor no está configurado como corresponde. Los encabezados HTTP 
+            con el mismo nombre tienen prioridad frente a los meta tags de HTML. 
+            <br><br>
+            <h4>Control de caché:</h4>
+            Para asegurar la fluidez del funcionamiento de Internet, las webs se suelen guardar en servidores proxy intermedios o 
+            en el caché del navegador para ser descargadas fácilmente en el futuro. Para impedirlo usamos el meta tag “cache-control” 
+            con el valor no-cache:
+            <br><br>
+            <center>
+                "<"meta http-equiv="cache-control" content="no-cache" /">"
+            </center>
+            <br><br>
+            Las páginas web que cuentan con este meta tag se cargan nuevamente desde el servidor web cada vez que se accede a ellas. 
+            Esto puede ralentizar la navegación, pero puede ser conveniente en el caso de páginas que actualizan su contenido diariamente.
+            <br><br>
+            <h4>Expires:</h4>
+            Es posible que no se quiera prohibir el almacenamiento temporal en caché de forma absoluta. En este caso se puede usar el 
+            atributo “http-equiv” para definir una fecha de expiración para los datos HTML solicitados. Se haría de esta manera:
+            <br><br>
+            <center>
+                "<"meta http-equiv="expires" content="tiempo de expiración en segundos" /">"
+            </center>
+            <br><br>
+            Así es posible asignar a las páginas HTML la fecha de caducidad que se deseen. Una vez se supera esta fecha, el navegador 
+            tiene que cargar el documento HTML desde la página de origen. Pero si tiene que acudir siempre a la página original entonces 
+            se introduce un punto de caducidad de 0 segundos. En caso de que se quiera indicar un período de 12 horas, se introducen 
+            43.200 segundos.
+            <br><br>
+            <h4>Refresh:</h4>
+            Con los meta tags “http-equiv” es posible configurar también una transferencia sencilla. De forma parecida a como funciona 
+            la etiqueta “expires”, con este atributo también se define una fecha de vencimiento, a partir de la cual los navegadores o 
+            los motores de búsqueda serán dirigidos a una URL establecida previamente. En este ejemplo, en 10 segundos se produce el 
+            reenvío a la página principal de IONOS:
+            <br>
+            <center>
+                "<"meta http-equiv="refresh" content="10; url=http://www.ionos.es/" /">"
+            </center>
+            <br><br>
+            Sin embargo, puede ocurrir que esta etiqueta no funcione en caso de ajustes especiales en el navegador, por lo que, en 
+            lugar de indicar un reenvío con meta tags, el W3C (World Wide Web Consortium), dedicado a la estandarización de técnicas 
+            y usos en Internet, recomienda usar el código de estado de HTTP 301, por medio del cual un servidor informa de si el 
+            archivo buscado ha cambiado de ubicación.
+        </article>
+    </section>
+    <aside>
+        <footer>
+            <br><br><br><br><br>
+            <center>
+                Nombre: Luis Angel Florez Palacio.
+                CC: 1025882220.
+                Cel: 3004041082.
+                Estudiante: Asistente en Desarrollo de Software.
+            </center>
+        </footer>
+    </aside>
+</body>
+
+</html>

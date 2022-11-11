@@ -1,0 +1,133 @@
+/* Todo la vista de usuario */
+body {
+    background-image: url(Imagenes/Fondo.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Cabecera */
+header {
+    background-image: url(Imagenes/Titulo.webp);
+    background-position: center;
+    background-size: cover;
+    border-style: ridge;
+    width: 96.25%;
+    height: 105px;
+    padding: 25px;
+}
+
+/* Título principal */
+h1 {
+    color: transparent;
+    text-align: center;
+    font-family: Impact;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 25px 0px 0px 0px;
+    background-image: url(Imagenes/Natu.jpg);
+    background-size: cover;
+    background-position-y: center;
+    background-clip: text;
+    word-spacing: 20px;
+    letter-spacing: 12px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Títulos secundarios */
+h2 {
+    font: bold 45px 'Segoe';
+    color: black;
+    text-align: left;
+    letter-spacing: 6px;
+    text-shadow: 3px 3px 2px rgb(0, 255, 234), 6px 6px 2px rgb(26, 96, 143), 9px 9px 5px rgb(245, 245, 245);
+}
+
+/* Texto general */
+p {
+    font: 25px 'Century Gothic';
+    margin: 20px 0px 15px 20px;
+}
+
+/* Barra final de página */
+#final{
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* Barra de navegación */
+#menu {
+    background-image: url(Imagenes/Nav.webp);
+    border-style:ridge;
+    width: 100%;
+    height: 60px;
+    color: rgb(0, 68, 255);
+}
+
+/* Barra de navegación */
+#menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+/* Logo de cabecera */
+#logo {
+    border-style: outset;
+    float: right;
+}
+
+/* Multimedia de la derecha */
+#insD {
+    float: right;
+    border-style: outset;
+    color: rgba(214, 210, 210, 0.87);
+    margin: 15px 50px 0px 25px;
+}
+
+/* Multimedia de la izquierda */
+#insI {
+    float: left;
+    border-style: outset;
+    color: rgba(214, 210, 210, 0.87);
+    margin: 0px 25px 0px 50px;
+}
+
+/* Multimedia del medio */
+#insC {
+    border-style: outset;
+    color: rgba(214, 210, 210, 0.87);
+    margin: 0px 0px 0px 38%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Hipervinculos de redes sociales */
+#hiper {
+    color: rgb(5, 5, 5);
+    font: bold 25px 'Bodoni MT';
+    text-decoration: none;
+}
+
+/* Nombres redes sociales */
+#redesT {
+    font: bold 15px cursive;
+}
+
+/* Cuentas redes sociales */
+#redes {
+    font: 10px cursive;
+}
+
+/* Organizar redes sociales */
+#tabla {
+    display: flex;
+    justify-content: center;
+}
+
+/* Organizar redes sociales */
+#celda {
+    text-align: center;
+    margin: 10px 30px 15px;
+}

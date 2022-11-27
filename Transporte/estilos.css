@@ -45,6 +45,24 @@ h2 {
     text-shadow: 3px 3px 2px rgb(0, 255, 234), 6px 6px 2px rgb(26, 96, 143), 9px 9px 5px rgb(245, 245, 245);
 }
 
+/* Títulos secundarios */
+h3 {
+    font: bold 30px 'Segoe';
+    color: rgb(90, 86, 100);
+    text-align: left;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0), 3px 3px 2px rgb(26, 96, 143), 4px 4px 1px rgb(255, 255, 255);
+}
+
+/* Títulos secundarios */
+h4 {
+    font: bold 25px 'Segoe';
+    color: rgb(90, 86, 100);
+    text-align: left;
+    letter-spacing: 6px;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0), 3px 3px 2px rgb(26, 96, 143), 4px 4px 1px rgb(255, 255, 255);
+}
+
 /* Texto general */
 p {
     font: 25px 'Century Gothic';
@@ -130,4 +148,14 @@ p {
 #celda {
     text-align: center;
     margin: 10px 30px 15px;
+}
+
+.opciones {
+    font-size: 25px; 
+    margin-left: 30px;
+}
+
+.naveg {
+    color: white;
+    text-decoration: none;
 }

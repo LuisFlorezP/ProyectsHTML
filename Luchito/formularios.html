@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Página de teoría principal.">
+    <meta name="robots" content="index,follow">
+    <title>Formularios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+    <header>
+        <section class="header__superior">
+            <section class="logo">
+                <img src="Imagenes/Leon.jpeg" alt="Logo de león">
+            </section>
+            <section class="title">
+                <h1 id="name">LUCHITO S.A.S</h1>
+            </section>
+        </section>
+        <section class="container__menu">
+            <section class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="index.html" id="selected"></a></li>
+                        <li><a href="estudios.html">Estudios</a></li>
+                        <li><a href="formularios.html">Formularios</a></li>
+                        <li><a href="#">Repositorios GitHub</a>
+                            <ul>
+                                <li><a href="">Programs</a></li>
+                                <li><a href="">Proyectos Java</a></li>
+                                <li><a href="">Proyectos HTML</a></li>
+                                <li><a href="">Proyectos Python</a></li>
+                                <li><a href="">Proyectos SQL</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </header>
+    <main>
+        <section>
+            <h2>Datos personales:</h2>
+            <form action="">
+                <label for="name">
+                    <span>Ingresar tu nombre:</span>
+                    <input type="text" name="name" id="name" placeholder="Ejm: Luis Florez" autocomplete="name"
+                        required>
+                </label>
+                <br>
+                <label for="tipDoc">
+                    <span>Tipo de documento:</span>
+                    <input type="radio" name="tipDoc" id="tipDoc" value="CC">Cédula de ciudadanía
+                    <input type="radio" name="tipDoc" id="tipDoc" value="TI">Tarjeta de identidad
+                    <input type="radio" name="tipDoc" id="tipDoc" value="CE">Cédula de extranjería
+                </label>
+                <br>
+                <label for="document">
+                    <span>Ingresar número del documento:</span>
+                    <input type="number" name="document" id="document" placeholder="Ejm: 1025882220" required>
+                </label>
+                <br>
+                <label for="emailInfo">
+                    <span>Ingresar correo personal:</span>
+                    <input type="email" name="emailInfo" id="emailInfo" placeholder="Ejm: braian1k3@gmail.com"
+                        autocomplete="email" required>
+                </label>
+                <br>
+                <label for="dateInfo">
+                    <span>Fecha de nacimiento:</span>
+                    <input type="date" name="dateInfo" id="dateInfo" required>
+                </label>
+                <br>
+                <label for="timeInfo">
+                    <span>Horario de estudio:</span>
+                    <input type="time" name="timeInfo" id="timeInfo" required>
+                </label>
+                <br>
+                <label for="gender">
+                    <span>Género:</span>
+                    <select name="gender" id="gender">
+                        <option value="Masculino">Masculino.</option>
+                        <option value="Femenino">Femenino.</option>
+                        <option value="Otro">Otro.</option>
+                    </select>
+                </label>
+                <br>
+                <label for="languagues">
+                    <span>Lenguajes de programación:</span>
+                    <input list="languagues">
+                    <datalist id="languagues">
+                        <option value="Java"></option>
+                        <option value="Python"></option>
+                        <option value="JavaScript"></option>
+                    </datalist>
+                </label>
+                <br>
+                <input type="submit">
+                <button type="reset">Vacias campos</button>
+            </form>
+        </section>
+        <section>
+            <h2>Calendario:</h2>
+            <form action="">
+                <label for="hora">
+                    <span>Seleccionar hora:</span>
+                    <input type="time" name="hora" id="hora" required>
+                </label>
+                <br>
+                <label for="fecha">
+                    <span>Seleccionar fecha:</span>
+                    <input type="date" name="fecha" id="fecha" required>
+                </label>
+                <br>
+                <label for="semana">
+                    <span>Seleccionar semana:</span>
+                    <input type="week" name="semana" id="semana" required>
+                </label>
+                <br>
+                <label for="mes">
+                    <span>Seleccionar mes:</span>
+                    <input type="month" name="mes" id="mes" required>
+                </label>
+                <br>
+                <label for="info">
+                    <span>Calendario completo:</span>
+                    <input type="datetime-local" name="info" id="info" required>
+                </label>
+                <br>
+                <input type="submit" value="Listo!">
+                <button type="reset">Borrar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="autory">
+            <p><strong>Elaborado por:</strong> Luis Angel Flórez Palacio.</p>
+        </section>
+        <section>
+            <img src="Imagenes/Exce.png" id="logFooter" alt="Medalla" width="autocomplete" height="60px">
+        </section>
+    </footer>
+</body>
+
+</html>

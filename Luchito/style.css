@@ -6,7 +6,7 @@ body {
 }
 
 main {
-    padding: 230px 20px 0px 20px;
+    padding: 200px 20px 0px 20px;
 }
 
 /* HEADER DE TODAS LAS PÁGINAS */
@@ -99,7 +99,9 @@ nav > ul > li a:hover {
     background-color: rgb(53, 111, 131);
     border-radius: 10px;
     border-width: 10px;
-    box-shadow: 0px 0px 10px 0px rgb(10, 15, 86);
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
+    color: rgb(10, 15, 86);
+    font-weight: bold;
 }
 
 nav > ul > li:first-child > a {
@@ -115,15 +117,15 @@ nav > ul > li:first-child > a {
     background-color: rgb(53, 111, 131);
     border-radius: 10px;
     border-width: 10px;
-    box-shadow: 0px 0px 10px 0px rgb(10, 15, 86);
+    box-shadow: 0px 0px 10px 0px rgb(255, 255, 255);
 }
 
 nav ul li ul {
-    width: 250px;
+    width: 200px;
     top: 50px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(10, 15, 86);
+    background-color: white;
     border-radius: 10px;
     border-width: 10px;
     position: absolute;
@@ -146,7 +148,7 @@ nav ul li ul::before {
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 12px solid rgb(10, 15, 86);
+    border-bottom: 12px solid rgb(255, 255, 255);
     position: absolute;
     top: -12px;
     left: 20px;
@@ -154,10 +156,30 @@ nav ul li ul::before {
 
 nav ul li ul li {
     padding: 5px 0px;
+    background-color: white;
+}
+
+nav ul li ul li a {
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    border-width: 5px;
+}
+
+nav ul li ul li a:hover {
+    transform: scale(1.1);
+    background-color: rgb(10, 15, 86);
+    border-radius: 10px;
+    border-width: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(10, 15, 86);
+    width: 180px;
+    color: white;
+    font-size: 14px;
 }
 
 /* TÍTULOS, SUBTÍTULOS Y TEXTO */
 h2 {
+    text-transform: uppercase;
     text-align: center;
     font-size: 30px;
     word-spacing: 12px;
@@ -207,6 +229,33 @@ p {
 /* PÁGINA FORMULARIOS */
 span {
     font-size: 17px;
+}
+
+/* PÁGINAS REPOSITORIOS */
+#vidRep {
+    width: 80%;
+    display: block;
+    margin: auto;
+    border-style: dashed;
+    border-width: 5px;
+    border-radius: 15px;
+    color: blue;
+}
+
+.block__reposit {
+    padding-top: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.block__reposit-item {
+    width: 35%;
+    text-align: right;
+}
+
+.block__reposit section {
+    padding-left: 100px;
 }
 
 /* PIE DE PÁGINA PARA TODAS LAS PÁGINAS */

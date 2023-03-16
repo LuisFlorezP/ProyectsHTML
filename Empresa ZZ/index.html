@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMPRESA ZZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Ico/Icono.ico">
+</head>
+
+<body>
+    <section id="container">
+        <section id="ranuraLogin">
+            <section id="cajita">
+                <h1>Empresa ZZ</h1>
+                <form action="#">
+                    <section id="validar"></section>
+                    <p class="datos">Usuario</p>
+                    <input type="text" id="nombre" class="login" placeholder="Ingrese usuario..." autocomplete="off"
+                        required>
+                    <hr class="bordeUno"><br>
+                    <p class="datos">Contraseña</p>
+                    <input type="password" id="contra" class="login" placeholder="Ingrese contraseña..." required>
+                    <hr class="bordeUno"><br>
+                    <button type="submit" id="inicioSesion">Acceder</button>
+                </form>
+            </section>
+        </section>
+        <section id="ranuraInfo">
+            <section id="opciones">
+                <section>
+                    <button id="salir"></button>
+                </section>
+                <section>
+                    <button id="portatil" class="buttons">Portátil</button>
+                </section>
+                <section>
+                    <button id="celular" class="buttons">Celular</button>
+                </section>
+                <section>
+                    <button id="cliente" class="buttons">Cliente</button>
+                </section>
+            </section>
+            <section id="formularios">
+                <section id="inicial"></section>
+                <section id="formPortatil">
+                    <form id="formPCC" action="#">
+                        <h1>Portátil</h1>
+                        <section class="division">
+                            <p class="entradas">Nombre:</p>
+                            <input type="text" id="nombrePl" class="forms"
+                                placeholder="Ingresar nombre del producto..." autocomplete="off" required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Referencia:</p>
+                            <input type="text" id="referenciaPl" class="forms"
+                                placeholder="Ingresar referencia del proucto..." autocomplete="off" required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Código:</p>
+                            <input type="number" id="codigoPl" class="forms"
+                                placeholder="Ingresar código del producto..." required>
+                            <hr class="bordeDos">
+                        </section>
+                        <section class="division">
+                            <p class="entradas">Valor:</p>
+                            $<input type="number" id="valorPl" class="forms" step="0.01"
+                                placeholder="Ingresar el valor del producto..." required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Cantidad:</p>
+                            <input type="number" id="cantidadPl" class="forms"
+                                placeholder="Ingresar cantidad a vender del producto..." required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Imágen:</p>
+                            <input type="file" id="imagenPl" class="forms" required>
+                        </section>
+                        <button type="submit" id="guardarPl" class="guardar">Guardar</button>
+                    </form>
+                </section>
+                <section id="formCelular">
+                    <form id="formPCC" action="#">
+                        <h1>Celular</h1>
+                        <section class="division">
+                            <p class="entradas">Nombre:</p>
+                            <input type="text" id="nombreCr" class="forms"
+                                placeholder="Ingresar nombre del producto..." autocomplete="off" required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Referencia:</p>
+                            <input type="text" id="referenciaCr" class="forms"
+                                placeholder="Ingresar referencia del proucto..." autocomplete="off" required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Código:</p>
+                            <input type="number" id="codigoCr" class="forms"
+                                placeholder="Ingresar código del producto..." required>
+                            <hr class="bordeDos">
+                        </section>
+                        <section class="division">
+                            <p class="entradas">Valor:</p>
+                            $<input type="number" id="valorCr" class="forms" step="0.01"
+                                placeholder="Ingresar el valor del producto..." required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Cantidad:</p>
+                            <input type="text" id="cantidadCr" class="forms"
+                                placeholder="Ingresar cantidad a vender del producto..." required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Imágen:</p>
+                            <input type="file" id="imagenCr" class="forms" required>
+                        </section>
+                        <button id="guardarCr" class="guardar">Guardar</button>
+                    </form>
+                </section>
+                <section id="formCliente">
+                    <form id="formPCC" action="#">
+                        <h1>Cliente</h1>
+                        <section class="division">
+                            <p class="entradas">Nombre:</p>
+                            <input type="text" id="nombreCe" class="forms" placeholder="Ingresar nombre del cliente..." autocomplete="off" required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Documento:</p>
+                            <input type="text" id="documentoCe" class="forms"
+                                placeholder="Ingresar documento del cliente..." autocomplete="off" required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Celular:</p>
+                            <input type="tel" id="telefonoCe" class="forms"
+                                placeholder="Ingresar número celular del cliente..." required>
+                            <hr class="bordeDos">
+                        </section>
+                        <section class="division">
+                            <p class="entradas">Dirección:</p>
+                            <input type="text" id="direccionCe" class="forms"
+                                placeholder="Ingresar dirección del cliente..." autocomplete="off" required>
+                            <hr class="bordeDos">
+                            <p class="entradas">Correo:</p>
+                            <input type="email" id="emailCe" class="forms" placeholder="Ingresar correo del cliente..." autocomplete="off" required>
+                            <hr class="bordeDos">
+                        </section>
+                        <button id="guardarCe" class="guardar">Guardar</button>
+                    </form>
+                </section>
+                <section id="cartaP" class="ocultar">
+                    <p id="dato1" class="info"></p>
+                    <img src="" id="muestra1">
+                    <h2 id="dato2"></h2>
+                    <p id="dato3" class="info"></p>
+                    <p id="dato4" class="info"></p>
+                    <p id="dato5" class="info"></strong></p>
+                </section>
+                <section id="cartaC" class="ocultar">
+                    <section>
+                        <img src="Img/Cliente.png" id="muestra2">
+                    </section>
+                    <section>
+                        <h2 id="dato6"></h2>
+                        <p id="dato7" class="info"></p>
+                    </section>
+                    <section>
+                        <p id="dato8" class="info"></p>
+                        <p id="dato9" class="info"></p>
+                        <p id="dato10" class="info"></p>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>

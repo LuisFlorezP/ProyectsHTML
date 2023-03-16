@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    background-color: rgb(121, 179, 233);
+    text-decoration: none;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+#container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#container section {
+    padding: 10px 0px 40px 0px;
+    width: 100%;
+    text-align: center;
+}
+
+#btnDuelo {
+    padding: 25px 30px;
+    background-color: rgb(204, 201, 42);
+    line-height: 30px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    font-size: 19px;
+    font-weight: bold;
+    color: rgba(18, 57, 231, 0.767);
+    border-top: 7px;
+    border-bottom: 7px;
+    border-right: 7px;
+    border-left: 7px;
+    border-style: outset;
+    border-radius: 50%;
+    border-color: rgba(18, 57, 231, 0.767);
+}
+
+#btnDuelo:hover {
+    padding: 25px 30px;
+    background-color: rgba(18, 57, 231, 0.767);
+    line-height: 30px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(204, 201, 42);
+    border-top: 7px;
+    border-bottom: 7px;
+    border-right: 7px;
+    border-left: 7px;
+    border-style: outset;
+    border-radius: 50%;
+    border-color: rgb(204, 201, 42);
+}
+
+#container2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.espacio {
+    width: 49.5%;
+    text-align: center;
+}
+
+.opciones {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    height: 10px;
+    width: 80px;
+}
+
+#salir {
+    background-image: url(Img/Salir.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px 0px 60px 0px;
+}
+
+#pagina {
+    background-image: url(Img/Pokebola.png);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px 0px 60px 0px;
+}
+
+.refrescar {
+    background-image: url(Img/Refrescar.png);
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0px 0px 60px 0px;
+    border-style: none;
+}
+
+.ranuras {
+    padding-top: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.ranuras2 {
+    padding-top: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    padding: 0px 0px 25px 0px;
+    font-size: 30px;
+    color: rgb(34, 43, 173);
+    text-shadow: rgb(196, 193, 30) 3px 3px 0px;
+}
+
+#barra {
+    width: 1%;
+    border-style: outset;
+    border-width: 4px;
+    border-color: rgba(18, 57, 231, 0.767);
+    background-color: rgb(204, 201, 42);
+}
+
+.btnAzar {
+    padding: 15px 20px;
+    background-color: rgb(204, 201, 42);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 17px;
+    font-weight: bold;
+    color: rgba(18, 57, 231, 0.767);
+    border-top: 7px;
+    border-bottom: 7px;
+    border-right: 7px;
+    border-left: 7px;
+    border-style: outset;
+    border-radius: 15%;
+    border-color: rgba(18, 57, 231, 0.767);
+}
+
+.carta {
+    background-color: rgba(18, 57, 231, 0.767);
+    height: 400px;
+    margin: 30px 180px 0px 180px;
+    border-radius: 5%;
+    border-width: 10px;
+    border-color: rgb(204, 201, 42);
+    border-style:ridge;
+}
+
+.pokemon {
+    background-color: rgba(18, 57, 231, 0.767);
+    margin-top: 70px;
+    border-radius: 50%;
+    box-shadow: rgb(196, 193, 30) 0px 0px 20px 5px;
+}
+
